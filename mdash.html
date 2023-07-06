@@ -1,0 +1,2355 @@
+
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+
+<head>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>BNB Crush</title>
+
+    <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
+
+    <link rel="icon" href="assets/img/favicon.png" type="image/x-icon" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Fonts and icons -->
+
+    <script src="assets/js/plugin/webfont/webfont.min.js"></script>
+
+    <script>
+        WebFont.load({
+
+            google: {
+
+                "families": ["Lato:300,400,700,900"]
+
+            },
+
+            custom: {
+
+                "families": ["Flaticon", "Font Awesome 5 Solid", "Font Awesome 5 Regular", "Font Awesome 5 Brands",
+                    "simple-line-icons"
+                ],
+
+                urls: ['assets/css/fonts.min.css']
+
+            },
+
+            active: function() {
+
+                sessionStorage.fonts = true;
+
+            }
+
+        });
+    </script>
+
+    <!-- CSS Files -->
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="assets/css/atlantis.min.css">
+    <link rel="stylesheet" href="assets/css/myStyle.css">
+
+    <style type="text/css">
+        body {
+            background-color: #1e1729;
+            
+        }
+
+        .card {
+
+            background-color: #111025;
+
+        }
+
+        .btn-info {
+
+            background: #a62811 !important;
+            border-color: #ae2e0f !important;
+            border-radius: 50%;
+            margin-left: -12px;
+
+
+        }
+    </style>
+
+
+
+    <style>
+        .fa-power-off:hover {
+            color: #ff0909 !important;
+        }
+
+        .fa-power-off {
+            color: #ff0909;
+        }
+    </style>
+    <!-- <style>
+        @media screen and (max-width:997px) {
+            .asdasdasdasdasd {
+                display: none !important;
+            }
+
+        }
+    </style> -->
+    
+    <style>
+        .bg-new-box-2,
+        .bg-new-input-2 {
+            background-color: unset;
+            box-shadow: 1px 1px 1px rgb(0 0 0 / 30%);
+            border-radius: 8px;
+            border: 1px solid #89ce31;
+            color:#fff;
+            /* margin: 8px 0; */
+
+
+        }
+        #toasts .success
+        {
+            background-color: #223a2c;
+            box-shadow: 1px 1px 1px rgb(0 0 0 / 30%);
+            border-radius: 8px;
+            border: 1px solid #89ce31;
+            color:#fff;
+
+        }
+
+    .box-style-new-header {
+            border-radius: 8px;
+            padding: 5px;
+            margin: 5px;
+            border: 2px solid #65b4d5;
+
+        }
+
+    </style>
+
+
+
+</head>
+
+
+
+
+<body>
+
+
+
+
+
+    <div class="wrapper">
+        <div class="main-header">
+            <nav class="navbar navbar-header navbar-expand-lg navbar-light p-0" data-background-color="blue2">
+                <div class="container">
+                    <div class="logo-header" data-background-color="blue">
+                        <a href="index.php" class="logo">
+                            <img src="assets/img/logo.png" alt="navbar brand" class="navbar-brand" style="max-width: 50px !important;">
+                        </a>
+                    </div>
+
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+
+                        <span class="navbar-toggler-icon"></span>
+
+                    </button>
+
+
+
+
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown" style="font-size:1px !important">
+                        <!-- <div class="collapse navbar-collapse asdasdasdasdasd" id="navbarNavDropdown" style="font-size: 1px !important;display: flex;position: relative;flex-flow: row wrap;
+    align-items: space-between;
+    justify-content: flex-end;">  -->
+
+
+                        <ul class="navbar-nav topbar-nav ">
+                            <!-- <li class="nav-item active">
+                                <a class="nav-link " href="index.php">Main</a>
+                            </li> -->
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle " href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Office
+                                </a>
+                                <div class="dropdown-menu drop-down-new-bg" aria-labelledby="navbarDropdownMenuLink">
+
+                                    <a class="dropdown-item" href="index.php">Main Pannel</a>
+                                    <a class="dropdown-item" href="all_team.php"> All Team</a>
+                                    <a class="dropdown-item" href="direct_team.php"> Direct Team</a>
+                                    <!-- <a class="dropdown-item" href="x3income.php"> X3 Income</a>
+                                    <a class="dropdown-item" href="x4income.php"> X4 Income</a> -->
+                                    <a class="dropdown-item" href="xgoldincome.php"> Upgrade Income</a>
+                                    <a class="dropdown-item" href="xnextincome.php"> X8 Income</a>
+                                    <a class="dropdown-item" href="directincm.php"> Direct Income</a>
+                                    <a class="dropdown-item" href="hash_xgold.php"> Enter S30 Hash</a>
+                                    <a class="dropdown-item" href="hash.php"> Enter X8 Hash</a>
+                                    
+                                    
+
+                                </div>
+
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle " href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Information
+                                </a>
+                                <div class="dropdown-menu drop-down-new-bg" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="nav-link " target="_blank" href="https://t.me/bnbcrush">Telegram English</a>
+                                    <a class="nav-link " target="_blank" href="https://t.me/bnbcrushofficial">Telegram Channel</a>
+                                    <a class="nav-link " target="_blank" href="https://chat.whatsapp.com/K6moa9Bvl7sA9525wwPkeG">WhatsApp</a>
+                                </div>
+
+                            </li>
+
+
+                            <!-- <li class="user text-center my-auto"> -->
+                            <li class="user ">
+                                <a target="_blank" href="https://t.me/bnbcrush">
+                                    <img src="assets/img/tl.png" style="max-width: 30px;">
+                                </a>
+                            </li>
+                            <li class="user">
+                                <a href="#">
+                                    <img src="assets/img/yt.png" style="max-width: 30px;">
+                                </a>
+
+                            </li>
+
+
+
+                        </ul>
+
+                    </div>
+
+
+                    <div class="dropdown mainuser">
+
+
+                        <div class="user" onclick='window.location.href="logout.php"'>
+                            <!-- <img src="assets/img/user.png"> -->
+                            <span style="color:#ff0909">
+                                <i class="fa fa-power-off" aria-hidden="true"></i>
+                                Logout</span>
+
+                            <!-- <i class="fa fa-power-off" aria-hidden="true"></i>
+                            Logout -->
+
+                        </div>
+
+
+
+
+
+
+
+
+                    </div>
+
+                </div>
+
+            </nav>
+
+            <!-- End Navbar -->
+
+        </div>
+        <!-- //////////////////////////////////// -->
+
+        <!-- ////////////////////////////////////// -->
+        <div class="main-panel">
+
+            <div class="content background-all-page2">
+
+                <div class="container">
+
+                    <div class="panel-header">
+
+                        <div class="page-inner py-4">
+
+                            <!--<div class="card-marquee-fixed" style="background: black; margin-top: 6px;position: fixed;top: 65px;z-index: 9999; width:100%;">-->
+                            <!--    <marquee direction="left" id="demo">-->
+
+                            <!--    </marquee>-->
+                            <!--</div>-->
+
+                            <!--  -->
+                            <script>
+                                // setInterval(() => {
+                                //     marque();
+                                // }, 2000);
+
+                                function marque() {
+                                    // const button = document.getElementById('button');
+                                    // const toasts = document.getElementById('toasts');
+
+
+                                    var av2 = [""];
+
+                                    // console.log(av2);
+
+
+                                    document.getElementById('demo').innerHTML = av2;
+                                    // document.getElementById("demo").innerHTML = 5 + 6;
+
+
+                                }
+                            </script>
+
+                            <!-- <div class="card cardMarqueeHeading">
+                                <div class="row">
+                                    <div class="col-4 col-lg-2 first11 ">
+                                        <h3>News Update</h3>
+                                    </div>
+                                    <div class="col-8 col-lg-10 second22">
+                                        <h2>
+                                            <marquee> Welcome To The Future Matrix BSC Smart Contract </marquee>
+                                        </h2>
+                                    </div>
+                                </div>
+                            </div> -->
+                            <!--  <div class="card ">
+                                <div class="row">
+                                    <div class="col-12 text-center">
+                                        <h2 style="color:#37ff13; font-size: 20px;">FUTURE MATRIX XGOLD COMING SOON <SPAN id="timer"></SPAN></h2>
+                                    </div>
+                                </div>
+                            </div>-->
+
+                            <div class="header-text-style">
+                                <div class="row text-center">
+                                    <div class="col-6 col-md-3">
+                                        <div class="p-3">
+                                        <h3 class="my-1">12703</h3>
+                                        <p class="p-0 m-0">
+                                            ALL PARTICIPANTS
+                                        </p>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-6 col-md-3">
+                                        <div class="p-3">
+                                        <h3 class="my-1"><span style="color:#37ff13; font-size: 20px;">&#8593;
+                                                        +236</h3></span>
+                                        <p class="p-0 m-0">
+                                            JOINED IN 24 HOURS
+                                        </p>
+
+                                    </div>
+                                    </div>
+                                    <div class="col-6 col-md-3">
+                                        <div class="p-3">
+                                        <h3 class="my-1">
+                                                                                            257.0920  BNB
+                                                                                    </h3>
+                                        <p class="p-0 m-0">
+                                            PARTICIPANTS HAVE EARNED BNB
+                                        </p>
+                                    </div>
+                                    </div>
+                                    <div class="col-6 col-md-3">
+                                        <div class="p-3">
+                                        <h3 class="my-1">
+                                                                                            77,127.60USD
+                                                                                    </h3>
+                                        <p class="p-0 m-0">
+                                            PARTICIPANTS HAVE EARNED USD
+                                        </p>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <script>
+                                var countDownDate = new Date("December 05, 2022 18:30:00").getTime();
+
+                                // Update the count down every 1 second
+                                // var x = setInterval(function () {
+
+                                //     var now = new Date();
+                                //     var change = now.toLocaleString('en-US', {
+                                //         // timeZone: 'America/New_York'
+                                //         timeZone: 'Asia/Kolkata'
+                                //     });
+                                //     var convertedDate = new Date(change).getTime();
+                                //     var distance = countDownDate - convertedDate;
+
+                                //     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                                //     var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                                //     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                                //     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                                //     // document.getElementById("timer").innerHTML = ' <p> ' + days + ' <br /> ' + "days" + ' </p> ' + ' <p> ' + hours + ' <br /> ' + "hours" +
+                                //         // ' </p> ' + ' <p> ' + minutes + ' <br /> ' + "minutes" + ' </p> ' + ' <p> ' + seconds + ' <br /> ' + "seconds" + ' </p> ';
+                                //           document.getElementById("timer").innerHTML = '  ' + days + '  ' + "days" + '  ' + '  ' + hours + '  ' + "hours" +
+                                //         '  ' + '  ' + minutes + '  ' + "minutes" + '  ' + '  ' + seconds + '  ' + "seconds" + '  ';
+
+                                //     if (distance < 0) {
+                                //         clearInterval(x);
+                                //         document.getElementById("timer").innerHTML = "done";
+                                //     }
+                                // }, 1000);
+                            </script>
+
+
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-12 col-lg-3">
+
+                            <div class="page-inner mx-2">
+
+                                <div class="row border-style-pg">
+
+                                    <!-- <div class="col-12 text-center">
+                                        <a href="index.php" class="logo">
+
+                                            <img src="assets/img/logo.png" alt="navbar brand" class="navbar-brand" style="max-width: 250px;">
+
+                                        </a>
+                                    </div> -->
+
+                                    <div class="col-12 ">
+                                        <div class="card card-stats bg-overly-1 left-bar mb-2 p-1">
+                                            <div class="row no-gutters">
+                                                <div class="col-12 text-center">
+                                                    <!-- <h4 class="text_heading_left22 m-0 p-0">1 TRX : 0.054728</h4> -->
+                                                    <img src="assets/img/logo.png" class="navbar-brand w-50">
+
+                                                </div>
+                                                <div class="col-12 text-right pr-3">
+                                                    <h2 class="m-0 p-0 txt-gr font-weight-bold"> USER-ID : 12702</h2>
+                                                    <h3 class="my-1 p-0  font-weight-bold" style="color: orange;font-size:12px;"> Joining Date: 2023-07-06 20:35:49</h3>
+                                                    <h2 class="m-0 p-0 txt-gr font-weight-bold"><img src="assets/img/partners.png" style="max-width: 20px;"> 0</h2>
+                                                    <h3 class="my-1 p-0  font-weight-bold" style="color: orange"> Upline-ID : 1</h3>
+                                                    <h3 class="my-2 p-0  font-weight-bold "> $ &nbsp; (0.00)</h3>
+                                             
+                                                </div>
+                                                <div class="col-12  text-center m-auto">
+                                                    <h3 class="trx-box-bg"> 0.0000 BNB</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!--<div class="card card-stats bg-overly-1 left-bar mb-2 cardNewLeft p-3" style="margin-top: 35px;">-->
+                                        <!--    <div class="row">-->
+                                        <!--        <div class="col-12 text-left">-->
+                                        <!--            <h2 class="text_heading_left22 m-0 p-0">All Participants</h2>-->
+                                        <!--            <h3 class="text_heading_left11 m-0 p-0">12703</h3>-->
+                                                   
+                                        <!--        </div>-->
+                                        <!--    </div>-->
+                                        <!--</div>-->
+                                       
+
+
+                                        <!--<div class="card card-stats bg-overly-1 left-bar mb-2 cardNewLeft p-3" style="margin-top: 20px;">-->
+                                        <!--    <div class="row">-->
+                                        <!--        <div class="col-12 text-left">-->
+                                        <!--            <h2 class="text_heading_left22 m-0 p-0"> JOINED IN 24 HOURS</h2>-->
+                                                   
+                                        <!--            <h3 class="text_heading_left11 m-0 p-0" style="color:#37ff13; font-size: 20px;">&#8593;-->
+                                        <!--                +236</h3>-->
+                                        <!--        </div>-->
+                                        <!--    </div>-->
+                                        <!--</div>-->
+
+                                      
+
+                                        <!--<div class="card card-stats bg-overly-1 left-bar mb-2 cardNewLeft p-3" style="margin-top: 35px;">-->
+                                        <!--    <div class="row">-->
+                                        <!--        <div class="col-12 text-left">-->
+                                        <!--            <h2 class="text_heading_left22 m-0 p-0">Participants Have Earned TRX</h2>-->
+                                        <!--            <h3 class="text_heading_left11 m-0 p-0">257.092-->
+                                        <!--            TRX</h3>-->
+                                        <!--            <span style="color:#37ff13; font-size: 20px;">&#8593;-->
+                                        <!--                (2.976) TRX</span>-->
+                                        <!--        </div>-->
+                                        <!--    </div>-->
+                                        <!--</div>-->
+                                        <!--<div class="card card-stats bg-overly-1 left-bar mb-2 cardNewLeft p-3" style="margin-top: 35px;">-->
+                                        <!--    <div class="row">-->
+                                        <!--        <div class="col-12 text-left">-->
+                                        <!--            <h2 class="text_heading_left22 m-0 p-0">Participants Have Earned USD</h2>-->
+                                        <!--            <h3 class="text_heading_left11 m-0 p-0">21.424333333333 USD</h3>-->
+                                        <!--            <span style="color:#37ff13; font-size: 20px;">&#8593;-->
+                                        <!--                (0.25) USD</span>-->
+                                        <!--        </div>-->
+                                        <!--    </div>-->
+                                        <!--</div>-->
+                                        <!--<div class="text-right">-->
+                                        <!--    <span class="badge badge-danger badge-box-new bg-warning">-->
+                                        <!--        <h4 class="text-dark"> 21.42 USD</h4>-->
+                                        <!--    </span>-->
+                                        <!--</div>-->
+                                        <!-- ////////////////////////////////////// -->
+                                        
+                                        <!---->
+                                         <div class="card card-stats bg-overly-1 left-bar mb-2 cardNewLeft p-3" style="margin-top: 35px;">
+                                            <div class="row">
+                                                <div class="col-12 text-left">
+                                                    <h2 class="text_heading_left22 m-0 p-0">Weakly Income</h2>
+                                                    <h3 class="text_heading_left11 m-0 p-0">0.0000 BNB<br>
+                                                        $ (0.00)</h3>
+                                                    <!-- <span style="color:#37ff13; font-size: 20px;">&#8593;
+                                                        (0.0000) BNB</span> -->
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="card card-stats bg-overly-1 left-bar mb-2 cardNewLeft p-3" style="margin-top: 35px;">
+                                            <div class="row">
+                                                <div class="col-12 text-left">
+                                                    <h2 class="text_heading_left22 m-0 p-0">Monthly Income</h2>
+                                                    <h3 class="text_heading_left11 m-0 p-0">0.0000 BNB<br>
+                                                        $ (0.00)</h3>
+                                                    <!-- <span style="color:#37ff13; font-size: 20px;">&#8593;
+                                                        (0.0000) BNB</span> -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!---->
+                                        
+                                        
+                                        <div class="card card-stats bg-overly-1 left-bar mb-2 cardNewLeft p-3" style="margin-top: 35px;">
+                                            <div class="row">
+                                                <div class="col-12 text-left">
+                                                    <h2 class="text_heading_left22 m-0 p-0">Total Income</h2>
+                                                    <h3 class="text_heading_left11 m-0 p-0">0.0000 BNB<br>
+                                                        $ (0.00)</h3>
+                                                    <span style="color:#37ff13; font-size: 20px;">&#8593;
+                                                        (0.0000) BNB</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- <div class="card card-stats bg-overly-1 left-bar mb-2 cardNewLeft p-3" style="margin-top: 35px;">
+                                            <div class="row">
+                                                <div class="col-12 text-left">
+                                                    <h2 class="text_heading_left22 m-0 p-0">Total X4 Income</h2>
+                                                    <h3 class="text_heading_left11 m-0 p-0">0.000 BNB<br>
+                                                        $ (0.00)</h3>
+                                                    <span style="color:#37ff13; font-size: 20px;">&#8593;
+                                                        (0.000) BNB</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="text-right">
+                                            <span class="badge badge-danger badge-box-new bg-warning">
+                                                <h4 class="text-dark"> 0.000 BNB </h4>
+                                            </span>
+                                        </div> -->
+                                        <!-- <div class="card card-stats bg-overly-1 left-bar mb-2 cardNewLeft p-3" style="margin-top: 35px;">
+                                            <div class="row">
+                                                <div class="col-12 text-left">
+                                                    <h2 class="text_heading_left22 m-0 p-0">Total X3 Income</h2>
+                                                    <h3 class="text_heading_left11 m-0 p-0">0.000 BNB <br>
+                                                        $ (0.00)</h3>
+                                                    <span style="color:#37ff13; font-size: 20px;">&#8593;
+                                                        (0.000) BNB</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="text-right">
+                                            <span class="badge badge-danger badge-box-new bg-warning">
+                                                <h4 class="text-dark"> 0.000 BNB </h4>
+                                            </span>
+                                        </div> -->
+
+                                        <div class="card card-stats bg-overly-1 left-bar mb-2 cardNewLeft p-3" style="margin-top: 35px;">
+                                            <div class="row">
+                                                <div class="col-12 text-left">
+                                                    <h2 class="text_heading_left22 m-0 p-0">Total Upgrade Income</h2>
+                                                    <h3 class="text_heading_left11 m-0 p-0">0.0000 BNB <br>
+                                                        $ (0.00)</h3>
+                                                    <span style="color:#37ff13; font-size: 20px;">&#8593;
+                                                        (0.0000) BNB</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="text-right">
+                                            <span class="badge badge-danger badge-box-new bg-warning">
+                                                <h4 class="text-dark"> 0.000 BNB </h4>
+                                            </span>
+                                        </div>
+                                        
+                                        <!---->
+                                        
+ <div class="card card-stats bg-overly-1 left-bar mb-2 cardNewLeft p-3" style="margin-top: 35px;">
+                                            <div class="row">
+                                                <div class="col-12 text-left">
+                                                    <h2 class="text_heading_left22 m-0 p-0">Total Upgrade X8 Income </h2>
+                                                    <h3 class="text_heading_left11 m-0 p-0">0.0000 BNB <br>
+                                                        $ (0.00)</h3>
+                                                    <span style="color:#37ff13; font-size: 20px;">&#8593;
+                                                        (0.0000) BNB</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="text-right">
+                                            <span class="badge badge-danger badge-box-new bg-warning">
+                                                <h4 class="text-dark"> 0.000 BNB </h4>
+                                            </span>
+                                        </div>
+
+                                        <!---->
+                                        
+                                        <!-- <div class="card card-stats bg-overly-1 left-bar mb-2 cardNewLeft p-3" style="margin-top: 35px;">
+                                            <div class="row">
+                                                <div class="col-12 text-left">
+                                                    <h2 class="text_heading_left22 m-0 p-0">Total XXX Income</h2>
+                                                    <h3 class="text_heading_left11 m-0 p-0"> 0 BNB</td>
+                                                        <br>
+                                                        $ (0)
+
+                                                        </h4>
+                                                        <span style="color:#37ff13; font-size: 20px;">&#8593;
+                                                            (0) BNB</span>
+                                                </div>
+                                            </div>
+                                        </div> -->
+
+                                       
+
+
+
+                                        <!-- <div class="card card-stats bg-overly-1 left-bar mb-2 cardNewLeft p-3" style="margin-top: 20px;">
+                                            <div class="row">
+                                                <div class="col-12 text-center">
+                                                    <h2 class="text_heading_left22">Total X2 Income</h2>
+                                                    <h3 class="text_heading_left11">0 BNB<br>
+			                                            $ (0)</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card card-stats bg-overly-1 left-bar mb-2 cardNewLeft p-3" style="margin-top: 20px;">
+                                            <div class="row">
+                                                <div class="col-12 text-center">
+                                                    <h2 class="text_heading_left22">Total XXX Income</h2>
+                                                    <h3 class="text_heading_left11">0 BNB<br>
+			                                            $ (0)</h3>
+                                                </div>
+                                            </div>
+                                        </div> -->
+                                        
+                                        <div class="card card-stats bg-overly-1 left-bar mb-2 cardNewLeft p-3" style="margin-top: 35px;">
+                                            <div class="row">
+                                                <div class="col-12 text-left">
+                                                    <h2 class="text_heading_left22 m-0 p-0">Total Direct Income</h2>
+                                                    <h3 class="text_heading_left11 m-0 p-0">0.0000 BNB <br>
+                                                        $ (0.00)</h3>
+                                                    <span style="color:#37ff13; font-size: 20px;">&#8593;
+                                                        (0.0000) BNB</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="card card-stats bg-overly-1 left-bar mb-2 cardNewLeft p-3" style="margin-top: 20px;">
+                                            <div class="row">
+                                                <div class="col-12 text-center">
+                                                    <h2 class="text_heading_left22">Direct Team</h2>
+                                                    <h3 class="text_heading_left11">0</h3>
+                                                    <span style="color:#37ff13; font-size: 20px;">&#8593;
+                                                        (0) </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="allteam">
+
+                                        </div>
+                                        <script type="text/javascript">
+                                            var useriddd = '12702';
+
+                                            function allteam() {
+                                                const xhttp = new XMLHttpRequest();
+                                                xhttp.onload = function() {
+                                                    document.getElementById("allteam").innerHTML = this.responseText;
+                                                }
+                                                xhttp.open("GET", "system.php?uid=" + (window.useriddd));
+                                                xhttp.send();
+                                            }
+                                            allteam();
+                                        </script>
+
+
+
+                                        <!-- ///////////////////////////////////////// -->
+
+                                        <!-- /////////////////////////////////////////// -->
+                                    </div>
+
+                                </div>
+
+
+
+
+
+
+                                <div class="card card-stats  bg-overly-1 left-bar my-2 cardNewLeft p-3">
+                                    <div class="row">
+                                        <div class="col-12 my-auto text-left text_heading_left22">Affiliate link</div>
+                                        <div class="col-12 mt-3">
+                                            <form>
+                                                <div class="form-group my-auto" >
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <input type="text" class="input-style-new bg-new-input-2" id="copyContent" value="https://bnbcrush.io/register.php?sponsor=12702">
+                                                        </div>
+                                                        <div class="col-12 my-auto text-right">
+                                                            <div class="copy-btn-style mt-1">
+                                                                <button type="button" class="btn btn-primary" id="copyContentButton" onclick="copyToClipboard('#copyContent')">Copy</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="card card-stats  bg-overly-1 left-bar my-2 cardNewLeft p-3">
+                                    <div class="row">
+                                        <div class="col-12 my-auto text-center text_heading_left22">Your  wallet </div>
+                                        <div class="col-12 mt-1">
+                                            <form>
+                                                <div class="form-group my-auto" style="background-color:#1e1c2f;">
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <input type="text" class="input-style-new bg-new-input-2" id="copyContent2" value="0x90ec63d4417b630c29ff3b977579ecb3d844bde3">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+
+                                        
+                                    </div>
+                                </div>
+
+                                <div class="tron-scan-style">
+                                    <div class="row">
+                                        <div class="col-6 my-1 text-left">
+                                            <div class="copy-btn-style">
+                                                <a href="https://bscscan.com/address/0x90ec63d4417b630c29ff3b977579ecb3d844bde3" target="_blank" class="btn btn-primary">To Bscscan</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 my-1 text-right">
+                                            <div class="copy-btn-style">
+                                                <button type="button" class="btn btn-primary" id="copyContentButton22" onclick="copyToClipboard2('#copyContent2')">Copy</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="card card-stats bg-overly-1 left-bar my-2 cardNewLeft p-3">
+                                    <div class="row">
+                                        <div class="col-12 my-auto text-center text_heading_left22">Smart Contract Address</div>
+                                        <div class="col-12 mt-1">
+                                            <form>
+                                                <div class="form-group my-auto" style="background-color:#1e1c2f;">
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <input type="text" class="input-style-new bg-new-input-2" id="copyContent1" value="0xB594E99C53F1A53aF5d2f15ceDc95Cf02B9B8e07">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+
+                                        
+                                    </div>
+                                </div>
+                                <div class="tron-scan-style">
+                                    <div class="row">
+                                        <div class="col-6 text-left">
+                                            <div class="copy-btn-style">
+                                                 <!-- <a href=" https://bscscan.com/address/0xb3D3341dcD20491acB4Faa201DD4b5739117f42b" target="_blank" class="btn btn-primary">To Bscscan</a> -->
+                                                 <a href=" https://bscscan.com/address/0xB594E99C53F1A53aF5d2f15ceDc95Cf02B9B8e07" target="_blank" class="btn btn-primary">To Bscscan</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 text-right">
+                                            <div class="copy-btn-style">
+                                                <button type="button" class="btn btn-primary" id="copyContentButton1" onclick="copyToClipboard1('#copyContent1')">Copy</button>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+
+
+
+                                <!-- </div> -->
+                               
+                                
+                             
+                               
+
+                            </div>
+
+
+
+                        </div>
+
+
+
+                        <script>
+                            function copyToClipboard(element) {
+                                var $temp = $("<input>");
+                                $("body").append($temp);
+                                $temp.val($(element).val()).select();
+                                document.execCommand("copy");
+                                $temp.remove();
+                                document.getElementById('copyContentButton').innerHTML = 'Copied';
+
+                                setTimeout(() => {
+                                    document.getElementById('copyContentButton').innerHTML = 'Copy';
+                                }, 900);
+                            }
+                        </script>
+                        <script>
+                            function copyToClipboard1(element) {
+                                var $temp = $("<input>");
+                                $("body").append($temp);
+                                $temp.val($(element).val()).select();
+                                document.execCommand("copy");
+                                $temp.remove();
+                                document.getElementById('copyContentButton1').innerHTML = 'Copied';
+
+                                setTimeout(() => {
+                                    document.getElementById('copyContentButton1').innerHTML = 'Copy';
+                                }, 500);
+                            }
+                        </script>
+
+                        </script>
+                        <script>
+                            function copyToClipboard2(element) {
+                                var $temp = $("<input>");
+                                $("body").append($temp);
+                                $temp.val($(element).val()).select();
+                                document.execCommand("copy");
+                                $temp.remove();
+                                document.getElementById('copyContentButton22').innerHTML = 'Copied';
+
+                                setTimeout(() => {
+                                    document.getElementById('copyContentButton22').innerHTML = 'Copy';
+                                }, 500);
+                            }
+                        </script>
+                        <script>
+                            function copyToClipboard111(element) {
+                                var $temp = $("<input>");
+                                $("body").append($temp);
+                                $temp.val($(element).text()).select();
+                                document.execCommand("copy");
+                                $temp.remove();
+                                document.getElementById('copyContentButton111').innerHTML = '<i class="far fa-check-circle"></i>';
+
+                                setTimeout(() => {
+                                    document.getElementById('copyContentButton111').innerHTML = '<i class="fa fa-copy"></i>';
+                                }, 500);
+                            }
+                        </script>
+
+<style type="text/css">
+    .spinner img {
+        width: 150px;
+    }
+
+    .spinner {
+        width: 150px;
+        height: 150px;
+        border-radius: 100%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        animation: spin 3s infinite linear;
+    }
+
+    @keyframes spin {
+        from {
+            transform: rotate(0deg);
+        }
+
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+    #loader-wrapper {
+        height: 100%;
+        width: 100%;
+        background: rgb(76 76 76 / 79%);
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 99999;
+    }
+</style>
+<div id="loader-wrapper" style="display: none;">
+    <div class="spinner"><img src="../script/img/loader.png"></div>
+</div>
+<script src="assets/js/core/jquery.3.2.1.min.js"></script>
+
+<script>
+    $("#loader-wrapper").show();
+</script>
+<style>
+    .v1 img {
+        max-width: 100px;
+    }
+
+    /* .v1 {
+		padding: 46px;
+	} */
+
+    /*.lineclass {*/
+    /*    background-color: #1e1729;*/
+    /*    opacity: 1.8;*/
+    /*    background-image: radial-gradient(#122025 0.25px, #1e1729 0.25px);*/
+    /*    background-size: 5px 5px;*/
+
+    /*    border-radius: 20px;*/
+
+    /*}*/
+
+    .lineclass {
+        background-color: unset !important;
+        opacity: 1.8;
+
+        background-size: 5px 5px;
+
+        border-radius: 20px;
+
+    }
+
+
+    .footer {
+        background: unset;
+    }
+
+
+    .card-stats .card-body {
+        background-image: radial-gradient(#1d3b3b 0.25px, #1d3b3b 0.25px);
+        border-radius: 0 0 20px 20px;
+        padding-bottom: 10px !important;
+    }
+
+
+
+    .btn-info {
+
+        background: #ef9619 !important;
+        border-color: #ef9619 !important;
+        border-radius: 50%;
+        margin-left: -12px;
+
+    }
+</style>
+
+<style>
+    .card,
+    .breadcrumb,
+    .row-card-no-pd {
+        background-color: unset !important;
+    }
+</style>
+
+<!-- <canvas id="c" style="position: fixed; top: 0; left: 0; width:100%; height: 100%;z-index:-99"></canvas> -->
+
+<!-- <div class="card card-stats bg-overly-1 left-bar mb-2 cardNewLeft p-3" style="margin-top: 20px; " > -->
+
+
+
+
+
+<div class="col-12 col-lg-9 lineclass">
+    <!-- <div class="card cardImageLogo">
+        <div class="row">
+            <div class="col-12 col-lg-5">
+                <img src="assets/img/logo.png" class="w-100">
+            </div>
+            <div class="col-12  col-lg-7 my-auto text-center ">
+            </div>
+        </div>
+    </div> -->
+
+    <div class="page-inner">
+
+
+        <div class="row  px-4">
+            <div class="col-12 p-0">
+                <div class="row">
+
+
+
+
+                    <!-- /////////////////////////////////   gold///////////////// -->
+
+                    <div class="trx-no-partner-footer text-center">
+                        <h5> <span> BNB </span> THE COST OF PLATFORMS IN BNB (BINANCE) &nbsp; <img src="assets/img/reinvest.png" class="w-100  partners-reinvest-width"> NUMBER OF REOPENS
+                            &nbsp; <img src="assets/img/partners.png" class="w-100 partners-reinvest-width">PARTNERS ON THE PLATFORM
+                        </h5>
+                    </div>
+
+                    <div class="row row-card-no-pd p-4 mt-4">
+                        <div class="col-12 p-0">
+                            <div class="row">
+                                <div class="col-12 my-2">
+                                    <h3 class="MatrixText text-left ">BNB CRUSH UPGRADE PLAN</h3>
+                                </div>
+                                <!--  -->
+
+
+                                <div class="col-12 col-sm-4 col-md-4 tree-view-main-box m-auto">
+                                    <div class="card card-stats card-round mb-4">
+                                        <div class="card-body card-round p-0">
+                                            <div class="card-md-head-number">1</div>
+                                            <a href='my_team.php?x=1'><div class="card-md-head text-center"> 0.008</div></a>
+                                            <!-- <div class="card-md-head text-center future-martrix-active"> 10</div> -->
+                                            <!---->
+                                            <div class="v1 text-center my-3">
+                                                <ul class="nav nav-fill">
+    
+            <li class="nav-item">
+                <a class="nav-link padding10"></a>
+            </li>
+    
+            <li class="nav-item">
+                <a class="nav-link padding10"></a>
+            </li>
+    </ul>
+<ul class="nav nav-fill">
+    
+            <li class="nav-item">
+                <a class="nav-link padding6"></a>
+            </li>
+    
+            <li class="nav-item">
+                <a class="nav-link padding6"></a>
+            </li>
+    
+            <li class="nav-item">
+                <a class="nav-link padding6"></a>
+            </li>
+    
+            <li class="nav-item">
+                <a class="nav-link padding6"></a>
+            </li>
+    </ul>
+<ul class="nav nav-fill">
+    
+            <li class="nav-item">
+                <a class="nav-link padding3"></a>
+            </li>
+    
+            <li class="nav-item">
+                <a class="nav-link padding3"></a>
+            </li>
+    
+            <li class="nav-item">
+                <a class="nav-link padding3"></a>
+            </li>
+    
+            <li class="nav-item">
+                <a class="nav-link padding3"></a>
+            </li>
+    
+            <li class="nav-item">
+                <a class="nav-link padding3"></a>
+            </li>
+    
+            <li class="nav-item">
+                <a class="nav-link padding3"></a>
+            </li>
+    
+            <li class="nav-item">
+                <a class="nav-link padding3"></a>
+            </li>
+    
+            <li class="nav-item">
+                <a class="nav-link padding3"></a>
+            </li>
+    </ul>
+<ul class="nav nav-fill">
+    
+            <li class="nav-item">
+                <a class="nav-link padding1"></a>
+            </li>
+    
+            <li class="nav-item">
+                <a class="nav-link padding1"></a>
+            </li>
+    
+            <li class="nav-item">
+                <a class="nav-link padding1"></a>
+            </li>
+    
+            <li class="nav-item">
+                <a class="nav-link padding1"></a>
+            </li>
+    
+            <li class="nav-item">
+                <a class="nav-link padding1"></a>
+            </li>
+    
+            <li class="nav-item">
+                <a class="nav-link padding1"></a>
+            </li>
+    
+            <li class="nav-item">
+                <a class="nav-link padding1"></a>
+            </li>
+    
+            <li class="nav-item">
+                <a class="nav-link padding1"></a>
+            </li>
+    
+            <li class="nav-item">
+                <a class="nav-link padding1"></a>
+            </li>
+    
+            <li class="nav-item">
+                <a class="nav-link padding1"></a>
+            </li>
+    
+            <li class="nav-item">
+                <a class="nav-link padding1"></a>
+            </li>
+    
+            <li class="nav-item">
+                <a class="nav-link padding1"></a>
+            </li>
+    
+            <li class="nav-item">
+                <a class="nav-link padding1"></a>
+            </li>
+    
+            <li class="nav-item">
+                <a class="nav-link padding1"></a>
+            </li>
+    
+            <li class="nav-item">
+                <a class="nav-link padding1"></a>
+            </li>
+    
+            <li class="nav-item">
+                <a class="nav-link padding1"></a>
+            </li>
+    </ul>
+                                            </div>
+
+
+                                            <div class="v1-text p-1 pl-2">
+                                                <div class="left-v1">
+                                                    <span>0</span>
+                                                    <img src="assets/img/partners.png" class="w-100 partners-reinvest-width">
+
+                                                </div>
+                                                <div class="right-v1 pr-2">
+                                                    <span>
+                                                        0                                                    </span>
+                                                    <img src="assets/img/reinvest.png" class="w-100  partners-reinvest-width">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-sm-4 col-md-4 tree-view-main-box m-auto">
+                                    <div class="card card-stats card-round mb-4">
+                                        <div class="card-body card-round p-0">
+                                            <div class="card-md-head-number">2</div>
+                                            <a href='my_team.php?x=2'><div class="card-md-head text-center">0.016</div></a>
+                                            
+                                                    <div class="activate text-center">
+                                                        <a href="javascript:void(0)" id="upgradebutton" onclick="upgradePlanXgold('0x90ec63d4417b630c29ff3b977579ecb3d844bde3','0.016')"><span id="upbutton"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span><br>
+                                                            <span>Activate</span></a>
+                                                    </div>
+                                                                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-sm-4 col-md-4 tree-view-main-box m-auto">
+                                    <div class="card card-stats card-round mb-4">
+                                        <div class="card-body card-round p-0">
+                                            <div class="card-md-head-number">3</div>
+                                            <a href='my_team.php?x=3'><div class="card-md-head text-center"> 0.032</div></a>
+                                                                                            <div class="activate text-center">
+                                                    <span></span></a>
+                                                </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--  -->
+                                <!--  -->
+                                <div class="col-12 col-sm-4 col-md-4 tree-view-main-box m-auto">
+                                    <div class="card card-stats card-round mb-4">
+                                        <div class="card-body card-round p-0">
+                                            <div class="card-md-head-number">4</div>
+                                            <a href='my_team.php?x=4'><div class="card-md-head text-center"> 0.064</div></a>
+                                                                                            <div class="activate text-center">
+                                                    <span></span></a>
+                                                </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-sm-4 col-md-4 tree-view-main-box m-auto">
+                                    <div class="card card-stats card-round mb-4">
+                                        <div class="card-body card-round p-0">
+                                            <div class="card-md-head-number">5</div>
+                                            <a href='my_team.php?x=5'><div class="card-md-head text-center"> 0.128</div></a>
+                                                                                            <div class="activate text-center">
+                                                    <span></span></a>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-sm-4 col-md-4 tree-view-main-box m-auto">
+                                    <div class="card card-stats card-round mb-4">
+                                        <div class="card-body card-round p-0">
+                                            <div class="card-md-head-number">6</div>
+                                            <a href='my_team.php?x=6'><div class="card-md-head text-center"> 0.256</div></a>
+                                                                                            <div class="activate text-center">
+                                                    <span></span></a>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+                                </div>
+                                <!--  -->
+                                <!--  -->
+                                <div class="col-12 col-sm-4 col-md-4 tree-view-main-box m-auto">
+                                    <div class="card card-stats card-round mb-4">
+                                        <div class="card-body card-round p-0">
+                                            <div class="card-md-head-number">7</div>
+                                            <a href='my_team.php?x=7'><div class="card-md-head text-center">0.512</div></a>
+                                                                                            <div class="activate text-center">
+                                                    <span></span></a>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-sm-4 col-md-4 tree-view-main-box m-auto">
+                                    <div class="card card-stats card-round mb-4">
+                                        <div class="card-body card-round p-0">
+                                            <div class="card-md-head-number">8</div>
+                                            <a href='my_team.php?x=8'><div class="card-md-head text-center"> 1.024</div></a>
+                                                                                            <div class="activate text-center">
+                                                    <span></span></a>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-sm-4 col-md-4 tree-view-main-box m-auto">
+                                    <div class="card card-stats card-round mb-4">
+                                        <div class="card-body card-round p-0">
+                                            <div class="card-md-head-number">9</div>
+                                            <a href='my_team.php?x=9'><div class="card-md-head text-center"> 2.048</div></a>
+                                                                                            <div class="activate text-center">
+                                                    <span></span></a>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+                                </div>
+                                <!--  -->
+                                <!--  -->
+                                <div class="col-12 col-sm-4 col-md-4 tree-view-main-box m-auto">
+                                    <div class="card card-stats card-round mb-4">
+                                        <div class="card-body card-round p-0">
+                                            <div class="card-md-head-number">10</div>
+                                            <a href='my_team.php?x=10'><div class="card-md-head text-center"> 4.096</div></a>
+
+                                                                                            <div class="activate text-center">
+                                                    <span></span></a>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-sm-4 col-md-4 tree-view-main-box m-auto">
+                                    <div class="card card-stats card-round mb-4">
+                                        <div class="card-body card-round p-0">
+                                            <div class="card-md-head-number">11</div>
+                                            <a href='my_team.php?x=11'><div class="card-md-head text-center"> 8.192</div></a>
+                                                                                            <div class="activate text-center">
+                                                    <span></span></a>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-sm-4 col-md-4 tree-view-main-box m-auto">
+                                    <div class="card card-stats card-round mb-4">
+                                        <div class="card-body card-round p-0">
+                                            <div class="card-md-head-number">12</div>
+                                            <a href='my_team.php?x=12'><div class="card-md-head text-center"> 16.384</div></a>
+                                                                                            <div class="activate text-center">
+                                                    <span></span></a>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+                                </div>
+                                <!--  -->
+
+
+                            </div>
+                        </div>
+                        
+                        <div class="col-12 p-1">
+                            <div class="row">
+                                <div class="form-group">
+                                    <a href="hash_xgold.php" class="btn btn-success">Submit Hash for S30 Plan<br>(if payment deducted & plan not upgraded)</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                    
+
+
+                    <!-- /////////////////////////////////   gold///////////////// -->
+                    <div class="trx-no-partner-footer text-center">
+                        <h5> <span> BNB </span> THE COST OF PLATFORMS IN BNB (BINANCE) &nbsp; <img src="assets/img/reinvest.png" class="w-100  partners-reinvest-width"> NUMBER OF REOPENS
+                            &nbsp; <img src="assets/img/partners.png" class="w-100 partners-reinvest-width">PARTNERS ON THE PLATFORM
+                        </h5>
+                    </div>
+
+
+                    <!--  -->
+
+
+                    <!-- //xxx -->
+
+
+
+                    <!-- /// x gold k liye  -->
+
+
+                    <style>
+                        .team-mat {
+                            width: 100px;
+                            overflow: auto;
+                        }
+
+                        .team-mat td {
+                            border: 0 !important;
+                        }
+
+                        .team-mat td {
+                            width: 10px;
+
+                        }
+
+                        .nav {
+                            width: 100%;
+                            text-align: center;
+                        }
+
+                        .padding1 {
+                            padding: 1px !important;
+                        }
+
+                        .padding3 {
+                            padding: 3px !important;
+                        }
+
+                        .padding6 {
+                            padding: 6px !important;
+                        }
+
+                        .padding10 {
+                            padding: 10px !important;
+                        }
+
+                        .nav li {
+                            padding: 5px 0;
+                        }
+
+
+                        .nav li a {
+                            width: 10px;
+                            height: 10px;
+                            border-radius: 50px;
+                            margin: auto;
+                            padding: 5px;
+                            border: 2px solid #6bbe63;
+                            background-color: #000 !important;
+
+
+                        }
+
+                        .nav-link.active {
+                            background-color: #6bbe63 !important;
+                            ;
+                            border: 1px solid #6bbe63 !important;
+                            ;
+                        }
+                    </style>
+
+
+                    <!--  -->
+                    <!--  -->
+                    <!--  -->
+
+                </div>
+
+
+                <style>
+                    tbody,
+                    td,
+                    tfoot,
+                    th,
+                    thead,
+                    tr {
+
+                        height: 80px;
+                    }
+
+                    .nomics-ticker-widget-embedded .nomics-ticker-widget-footer a {
+                        color: #fff !important;
+
+                    }
+
+                    .nomics-ticker-widget-embedded .nomics-ticker-widget-footer a:hover {
+                        color: #fff !important;
+                    }
+
+                    .nomics-ticker-widget-embedded .nomics-ticker-widget-footer {
+                        color: #fff !important;
+
+                    }
+
+                    .nomics-ticker-widget-embedded .nomics-ticker-widget-footer {
+                        background-color: #fff !important;
+                    }
+                </style>
+                <!-- yo new hai  -->
+
+                <div class="row row-card-no-pd p-4 mt-4">
+                    <div class="col-12 p-0">
+                        <div class="row">
+                            <div class="col-12 my-2">
+                                <h3 class="MatrixText text-left ">BNB CRUSH X8 PLAN</h3>
+                            </div>
+                            <!--  -->
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="col-lg col-sm-12 col-md-12 tree-view-main-box m-auto">
+                                        <div class="card card-stats card-round mb-4">
+                                            <div class="card-body card-round p-0">
+                                                <div class="card-md-head-number">1</div>
+                                                <div class="card-md-head text-center"> 0.01</div>
+                                                <!-- <div class="card-md-head text-center future-martrix-active"> 10</div> -->
+                                                <!---->
+                                                <div class="v1 text-center my-3">
+                                                                                                                <div class="activate text-center">
+                                                                                                                                    <a href="javascript:void(0)" id="upgradebuttonnext" onclick="nextpackpurchase('0x90ec63d4417b630c29ff3b977579ecb3d844bde3','0.01')"><span id="upbuttonnext"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span><br>
+                                                                        <span>Activate</span></a>
+                                                                                                                            </div>
+
+                                                                                                        </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg col-sm-12 col-md-12 tree-view-main-box m-auto">
+                                        <div class="card card-stats card-round mb-4">
+                                            <div class="card-body card-round p-0">
+                                                <div class="card-md-head-number">2</div>
+                                                <div class="card-md-head text-center"> 0.02</div>
+                                                <!-- <div class="card-md-head text-center future-martrix-active"> 10</div> -->
+                                                <!---->
+                                                <div class="v1 text-center my-3">
+                                                                                                    <div class="activate text-center">
+                                                    <span></span></a>
+                                                </div>
+                                                                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg col-sm-12 col-md-12 tree-view-main-box m-auto">
+                                        <div class="card card-stats card-round mb-4">
+                                            <div class="card-body card-round p-0">
+                                                <div class="card-md-head-number">3</div>
+                                                <div class="card-md-head text-center"> 0.04</div>
+                                                <!-- <div class="card-md-head text-center future-martrix-active"> 10</div> -->
+                                                <!---->
+                                                <div class="v1 text-center my-3">
+                                                                                                    <div class="activate text-center">
+                                                    <span></span></a>
+                                                </div>
+                                                                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg col-sm-12 col-md-12 tree-view-main-box m-auto">
+                                        <div class="card card-stats card-round mb-4">
+                                            <div class="card-body card-round p-0">
+                                                <div class="card-md-head-number">4</div>
+                                                <div class="card-md-head text-center"> 0.08</div>
+                                                <!-- <div class="card-md-head text-center future-martrix-active"> 10</div> -->
+                                                <!---->
+                                                <div class="v1 text-center my-3">
+                                                                                                    <div class="activate text-center">
+                                                    <span></span></a>
+                                                </div>
+                                                                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg col-sm-12 col-md-12 tree-view-main-box m-auto">
+                                        <div class="card card-stats card-round mb-4">
+                                            <div class="card-body card-round p-0">
+                                                <div class="card-md-head-number">5</div>
+                                                <div class="card-md-head text-center"> 0.16</div>
+                                                <!-- <div class="card-md-head text-center future-martrix-active"> 10</div> -->
+                                                <!---->
+                                                <div class="v1 text-center my-3">
+                                                                                                    <div class="activate text-center">
+                                                    <span></span></a>
+                                                </div>
+                                                                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- /////////////nets colum -->
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="col-lg col-sm-12 col-md-12 tree-view-main-box m-auto">
+                                        <div class="card card-stats card-round mb-4">
+                                            <div class="card-body card-round p-0">
+                                                <div class="card-md-head-number">6</div>
+                                                <div class="card-md-head text-center"> 0.32</div>
+                                                <!-- <div class="card-md-head text-center future-martrix-active"> 10</div> -->
+                                                <!---->
+                                                <div class="v1 text-center my-3">
+                                                                                                    <div class="activate text-center">
+                                                    <span></span></a>
+                                                </div>
+                                                                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg col-sm-12 col-md-12 tree-view-main-box m-auto">
+                                        <div class="card card-stats card-round mb-4">
+                                            <div class="card-body card-round p-0">
+                                                <div class="card-md-head-number">7</div>
+                                                <div class="card-md-head text-center"> 0.64</div>
+                                                <!-- <div class="card-md-head text-center future-martrix-active"> 10</div> -->
+                                                <!---->
+                                                <div class="v1 text-center my-3">
+                                                                                                    <div class="activate text-center">
+                                                    <span></span></a>
+                                                </div>
+                                                                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg col-sm-12 col-md-12 tree-view-main-box m-auto">
+                                        <div class="card card-stats card-round mb-4">
+                                            <div class="card-body card-round p-0">
+                                                <div class="card-md-head-number">8</div>
+                                                <div class="card-md-head text-center"> 1.28</div>
+                                                <!-- <div class="card-md-head text-center future-martrix-active"> 10</div> -->
+                                                <!---->
+                                                <div class="v1 text-center my-3">
+                                                                                                    <div class="activate text-center">
+                                                    <span></span></a>
+                                                </div>
+                                                                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg col-sm-12 col-md-12 tree-view-main-box m-auto">
+                                        <div class="card card-stats card-round mb-4">
+                                            <div class="card-body card-round p-0">
+                                                <div class="card-md-head-number">9</div>
+                                                <div class="card-md-head text-center"> 2.56</div>
+                                                <!-- <div class="card-md-head text-center future-martrix-active"> 10</div> -->
+                                                <!---->
+                                                <div class="v1 text-center my-3">
+                                                                                                    <div class="activate text-center">
+                                                    <span></span></a>
+                                                </div>
+                                                                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg col-sm-12 col-md-12 tree-view-main-box m-auto">
+                                        <div class="card card-stats card-round mb-4">
+                                            <div class="card-body card-round p-0">
+                                                <div class="card-md-head-number">10</div>
+                                                <div class="card-md-head text-center"> 5.12</div>
+                                                <!-- <div class="card-md-head text-center future-martrix-active"> 10</div> -->
+                                                <!---->
+                                                <div class="v1 text-center my-3">
+                                                                                                    <div class="activate text-center">
+                                                    <span></span></a>
+                                                </div>
+                                                                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+
+
+                            <!--  -->
+
+
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 p-1">
+                        <div class="row">
+                            <div class="form-group">
+                                <a href="hash.php" class="btn btn-success">Submit Hash for X8 Plan<br>(if payment deducted & plan not active)</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <!-- end hai -->
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title mb-4"> Binance Status</h4>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div>
+                                            <div class="nomics-ticker-widget" data-name="BNB" data-base="BNB" data-quote="USD"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end row -->
+                            </div>
+                        </div>
+                        <!-- end card -->
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+
+
+<!--<script src="https://widget.nomics.com/embed.js"></script>-->
+
+<!-- <script src="https://widget.nomics.com/embed.js"></script> -->
+
+<div class="page-inner">
+    <footer class="footer my-5">
+        <div class="row">
+            <div class="col-6">
+                <nav class="pull-left">
+                    <a href="#">
+                        <span class="__cf_email__" data-cfemail="b4dddad2dbf4d6dad6d7c6c1c7dc9adddb">[email&#160;protected]</span>
+                    </a>
+                </nav>
+            </div>
+            <div class="col-6">
+                <div class="copyright text-right"> 2023 <a href="index.php">BNB CRUSH</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+</div>
+
+</div>
+<!-- 
+<style type="text/css">
+    .spinner img {
+        width: 150px;
+    }
+
+    .spinner {
+        width: 150px;
+        height: 150px;
+        border-radius: 100%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        animation: spin 3s infinite linear;
+    }
+
+    @keyframes spin {
+        from {
+            transform: rotate(0deg);
+        }
+
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+    #loader-wrapper {
+        height: 100%;
+        width: 100%;
+        background: rgb(76 76 76 / 79%);
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 99999;
+    }
+</style>
+<div id="loader-wrapper" style="display: none;">
+    <div class="spinner"><img src="../script/img/loader.png"></div>
+</div> -->
+
+
+
+<div id="toasts"></div>
+
+
+
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+    const button = document.getElementById('button');
+    const toasts = document.getElementById('toasts');
+
+    var arr1 = '["Id No   : 12703 REG  : 0.008 BNB ","Id No   : 12702 REG  : 0.008 BNB ","Id No   : 12701 REG  : 0.008 BNB ","Id No   : 12700 REG  : 0.008 BNB ","Id No   : 12699 REG  : 0.008 BNB ","Id No   : 12703 Upgrade  : 0.008 BNB ","Id No   : 12702 Upgrade  : 0.008 BNB ","Id No   : 12701 Upgrade  : 0.008 BNB ","Id No   : 12700 Upgrade  : 0.008 BNB ","Id No   : 12699 Upgrade  : 0.008 BNB "]';
+    // var typ222 = 'null';
+
+    // console.log(arr);
+    var av2 = ["Id No   : 12703 REG  : 0.008 BNB ", "Id No   : 12702 REG  : 0.008 BNB ", "Id No   : 12701 REG  : 0.008 BNB ", "Id No   : 12700 REG  : 0.008 BNB ", "Id No   : 12699 REG  : 0.008 BNB ", "Id No   : 12703 Upgrade  : 0.008 BNB ", "Id No   : 12702 Upgrade  : 0.008 BNB ", "Id No   : 12701 Upgrade  : 0.008 BNB ", "Id No   : 12700 Upgrade  : 0.008 BNB ", "Id No   : 12699 Upgrade  : 0.008 BNB "];
+    // var typ1111 = ["Id No   : 12703 REG  : 0.008 BNB ", "Id No   : 12702 REG  : 0.008 BNB ", "Id No   : 12701 REG  : 0.008 BNB ", "Id No   : 12700 REG  : 0.008 BNB ", "Id No   : 12699 REG  : 0.008 BNB ", "Id No   : 12703 Upgrade  : 0.008 BNB ", "Id No   : 12702 Upgrade  : 0.008 BNB ", "Id No   : 12701 Upgrade  : 0.008 BNB ", "Id No   : 12700 Upgrade  : 0.008 BNB ", "Id No   : 12699 Upgrade  : 0.008 BNB "];
+
+    // var ar2 = arr;
+    // console.log(arr);
+
+    var messages = av2;
+
+
+    const types = ['success', 'success', 'success'];
+
+    // button.addEventListener('click', () => createNotification());
+
+
+
+    setInterval(() => {
+        createNotification();
+    }, 7000);
+
+
+    function createNotification(message = null, type = null) {
+        const notif = document.createElement('div');
+        notif.classList.add('toast');
+        notif.classList.add(type ? type : getRandomType());
+
+        // var gatmsg = getRandomMessage();
+
+
+        // var gatmsg2 = gatmsg.substr(14);
+        // var gatmsgtype = getRandomMessagetype();
+
+        // console.log(gatmsgtype);
+
+        // let result = gatmsg.substr(0, 30);
+
+        // var getm = '<a href="https://testnet.bscscan.com/tx/' + gatmsg2 + '"style="color:black">' + result + '.....' + '</a> '
+
+        // console.log(getm);
+
+
+        // console.log(gatmsg);
+
+        notif.innerText = message ? message : getRandomMessage();
+
+        toasts.appendChild(notif);
+
+        setTimeout(() => {
+            notif.remove();
+        }, 5000);
+    }
+
+    function getRandomMessage() {
+        return messages[Math.floor(Math.random() * messages.length)];
+    }
+
+    // function getRandomMessagetype() {
+    //     return messagestype[Math.floor(Math.random() * messagestype.length )];
+    // }
+
+    function getRandomType() {
+        return types[Math.floor(Math.random() * types.length)];
+    }
+
+
+    // setTimeout(function () {
+
+    //         getInfo(_getId);
+    //     }, 2000);
+</script>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+    * {
+        box-sizing: border-box;
+    }
+
+
+
+    .btn {
+        background-color: #5F9CFF;
+        border: none;
+        border-radius: 5px;
+        color: #000000;
+        cursor: pointer;
+        font-family: inherit;
+        font-weight: bold;
+        padding: 1rem;
+    }
+
+    .btn:focus {
+        outline: none;
+    }
+
+    .btn:active {
+        transform: scale(0.98);
+    }
+
+    #toasts {
+        /*align-items: flex-end;*/
+        /*bottom: 10px;*/
+        /*display: flex;*/
+        /*flex-direction: column;*/
+        /*position: fixed;*/
+        /*right: 10px;*/
+
+        align-items: center;
+        top: 70px;
+        flex-direction: column;
+        position: fixed;
+        right: 0;
+        left: 0;
+        display: flex;
+
+
+    }
+
+    .toast {
+        border-radius: 5px;
+        color: #000000;
+        margin: 0.5rem;
+        padding: 1rem 2rem;
+    }
+
+    .toast.info {
+        background-color: #969696;
+    }
+
+    .toast.success {
+        background-color: #61FF8F;
+    }
+
+    .toast.error {
+        background-color: #FF6161;
+    }
+</style>
+
+
+
+
+<!--   Core JS Files   -->
+
+<script src="assets/js/core/popper.min.js"></script>
+<script src="assets/js/core/bootstrap.min.js"></script>
+<!-- jQuery UI -->
+<script src="assets/js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+<script src="assets/js/plugin/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js"></script>
+<!-- jQuery Scrollbar -->
+<script src="assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+<!-- Datatables -->
+<script src="assets/js/plugin/datatables/datatables.min.js"></script>
+<!-- Bootstrap Notify -->
+<script src="assets/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>
+<!-- Sweet Alert -->
+<script src="assets/js/plugin/sweetalert/sweetalert.min.js"></script>
+<!-- Atlantis JS -->
+<script src="assets/js/atlantis.min.js"></script>
+<!-- <script src="assetss/js/webscriptupd.js"></script>
+<script src="assetss/js/webscriptsmart.js"></script> -->
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="../web3/dist/web3.min.js"></script>
+<script src="asseteth/ethscript.js?v=64a6d8fb0ed44"></script>
+
+
+
+<script>
+    var tridteamxxx = '';
+    var traddressteamxxxx = '';
+
+    if ((tridteamxxx) && tridteamxxx != null) {
+        console.log(234);
+        getInfoXgold(tridteamxxx, traddressteamxxxx);
+    }
+</script>
+
+<script>
+    var tridteadsdsdmxxx = '';
+    var traddresdsdssteamxxxx = '';
+
+    if ((tridteadsdsdmxxx) && tridteadsdsdmxxx != null) {
+        console.log(3333);
+        getInfoXnext(tridteadsdsdmxxx, traddresdsdssteamxxxx);
+    }
+</script>
+
+
+<script>
+    $(document).ready(function() {
+        console.log("ready!");
+        $("#loader-wrapper").hide();
+    });
+</script>
+
+<!-- <script type="text/javascript">
+    var w = c.width = window.innerWidth,
+        h = c.height = window.innerHeight,
+        ctx = c.getContext('2d'),
+
+        opts = {
+
+            range: 260,
+            baseConnections: 3,
+            addedConnections: 5,
+            baseSize: 5,
+            minSize: 1,
+            dataToConnectionSize: .4,
+            sizeMultiplier: .7,
+            allowedDist: 40,
+            baseDist: 40,
+            addedDist: 30,
+            connectionAttempts: 100,
+
+            dataToConnections: 1,
+            baseSpeed: .04,
+            addedSpeed: .05,
+            baseGlowSpeed: .4,
+            addedGlowSpeed: .4,
+
+            rotVelX: .003,
+            rotVelY: .002,
+
+            repaintColor: '#151419',
+            connectionColor: 'hsla(200,60%,light%,alp)',
+            rootColor: 'hsla(0,60%,light%,alp)',
+            endColor: 'hsla(160,20%,light%,alp)',
+            dataColor: 'hsla(40,80%,light%,alp)',
+
+            wireframeWidth: .1,
+            wireframeColor: '#88f',
+
+            depth: 260,
+            focalLength: 260,
+            vanishPoint: {
+                x: w / 2,
+                y: h / 2
+            }
+        },
+
+        squareRange = opts.range * opts.range,
+        squareAllowed = opts.allowedDist * opts.allowedDist,
+        mostDistant = opts.depth + opts.range,
+        sinX = sinY = 0,
+        cosX = cosY = 0,
+
+        connections = [],
+        toDevelop = [],
+        data = [],
+        all = [],
+        tick = 0,
+        totalProb = 0,
+
+        animating = false,
+
+        Tau = Math.PI * 2;
+
+    ctx.fillStyle = '#222';
+    ctx.fillRect(0, 0, w, h);
+    ctx.fillStyle = '#ccc';
+    ctx.font = '50px Verdana';
+    ctx.fillText('Future Tron', w / 2 - ctx.measureText('Future Tron').width / 2, h / 2 - 15);
+
+    window.setTimeout(init, 4); // to render the loading screen
+
+    function init() {
+
+        connections.length = 0;
+        data.length = 0;
+        all.length = 0;
+        toDevelop.length = 0;
+
+        var connection = new Connection(0, 0, 0, opts.baseSize);
+        connection.step = Connection.rootStep;
+        connections.push(connection);
+        all.push(connection);
+        connection.link();
+
+        while (toDevelop.length > 0) {
+
+            toDevelop[0].link();
+            toDevelop.shift();
+        }
+
+        if (!animating) {
+            animating = true;
+            anim();
+        }
+    }
+
+    function Connection(x, y, z, size) {
+
+        this.x = x;
+        this.y = y;
+        this.z = z;
+        this.size = size;
+
+        this.screen = {};
+
+        this.links = [];
+        this.probabilities = [];
+        this.isEnd = false;
+
+        this.glowSpeed = opts.baseGlowSpeed + opts.addedGlowSpeed * Math.random();
+    }
+    Connection.prototype.link = function() {
+
+        if (this.size < opts.minSize)
+            return this.isEnd = true;
+
+        var links = [],
+            connectionsNum = opts.baseConnections + Math.random() * opts.addedConnections | 0,
+            attempt = opts.connectionAttempts,
+
+            alpha, beta, len,
+            cosA, sinA, cosB, sinB,
+            pos = {},
+            passedExisting, passedBuffered;
+
+        while (links.length < connectionsNum && --attempt > 0) {
+
+            alpha = Math.random() * Math.PI;
+            beta = Math.random() * Tau;
+            len = opts.baseDist + opts.addedDist * Math.random();
+
+            cosA = Math.cos(alpha);
+            sinA = Math.sin(alpha);
+            cosB = Math.cos(beta);
+            sinB = Math.sin(beta);
+
+            pos.x = this.x + len * cosA * sinB;
+            pos.y = this.y + len * sinA * sinB;
+            pos.z = this.z + len * cosB;
+
+            if (pos.x * pos.x + pos.y * pos.y + pos.z * pos.z < squareRange) {
+
+                passedExisting = true;
+                passedBuffered = true;
+                for (var i = 0; i < connections.length; ++i)
+                    if (squareDist(pos, connections[i]) < squareAllowed)
+                        passedExisting = false;
+
+                if (passedExisting)
+                    for (var i = 0; i < links.length; ++i)
+                        if (squareDist(pos, links[i]) < squareAllowed)
+                            passedBuffered = false;
+
+                if (passedExisting && passedBuffered)
+                    links.push({
+                        x: pos.x,
+                        y: pos.y,
+                        z: pos.z
+                    });
+
+            }
+
+        }
+
+        if (links.length === 0)
+            this.isEnd = true;
+        else {
+            for (var i = 0; i < links.length; ++i) {
+
+                var pos = links[i],
+                    connection = new Connection(pos.x, pos.y, pos.z, this.size * opts.sizeMultiplier);
+
+                this.links[i] = connection;
+                all.push(connection);
+                connections.push(connection);
+            }
+            for (var i = 0; i < this.links.length; ++i)
+                toDevelop.push(this.links[i]);
+        }
+    }
+    Connection.prototype.step = function() {
+
+        this.setScreen();
+        this.screen.color = (this.isEnd ? opts.endColor : opts.connectionColor).replace('light', 30 + ((tick * this.glowSpeed) % 30)).replace('alp', .2 + (1 - this.screen.z / mostDistant) * .8);
+
+        for (var i = 0; i < this.links.length; ++i) {
+            ctx.moveTo(this.screen.x, this.screen.y);
+            ctx.lineTo(this.links[i].screen.x, this.links[i].screen.y);
+        }
+    }
+    Connection.rootStep = function() {
+        this.setScreen();
+        this.screen.color = opts.rootColor.replace('light', 30 + ((tick * this.glowSpeed) % 30)).replace('alp', (1 - this.screen.z / mostDistant) * .8);
+
+        for (var i = 0; i < this.links.length; ++i) {
+            ctx.moveTo(this.screen.x, this.screen.y);
+            ctx.lineTo(this.links[i].screen.x, this.links[i].screen.y);
+        }
+    }
+    Connection.prototype.draw = function() {
+        ctx.fillStyle = this.screen.color;
+        ctx.beginPath();
+        ctx.arc(this.screen.x, this.screen.y, this.screen.scale * this.size, 0, Tau);
+        ctx.fill();
+    }
+
+    function Data(connection) {
+
+        this.glowSpeed = opts.baseGlowSpeed + opts.addedGlowSpeed * Math.random();
+        this.speed = opts.baseSpeed + opts.addedSpeed * Math.random();
+
+        this.screen = {};
+
+        this.setConnection(connection);
+    }
+    Data.prototype.reset = function() {
+
+        this.setConnection(connections[0]);
+        this.ended = 2;
+    }
+    Data.prototype.step = function() {
+
+        this.proportion += this.speed;
+
+        if (this.proportion < 1) {
+            this.x = this.ox + this.dx * this.proportion;
+            this.y = this.oy + this.dy * this.proportion;
+            this.z = this.oz + this.dz * this.proportion;
+            this.size = (this.os + this.ds * this.proportion) * opts.dataToConnectionSize;
+        } else
+            this.setConnection(this.nextConnection);
+
+        this.screen.lastX = this.screen.x;
+        this.screen.lastY = this.screen.y;
+        this.setScreen();
+        this.screen.color = opts.dataColor.replace('light', 40 + ((tick * this.glowSpeed) % 50)).replace('alp', .2 + (1 - this.screen.z / mostDistant) * .6);
+
+    }
+    Data.prototype.draw = function() {
+
+        if (this.ended)
+            return --this.ended; // not sre why the thing lasts 2 frames, but it does
+
+        ctx.beginPath();
+        ctx.strokeStyle = this.screen.color;
+        ctx.lineWidth = this.size * this.screen.scale;
+        ctx.moveTo(this.screen.lastX, this.screen.lastY);
+        ctx.lineTo(this.screen.x, this.screen.y);
+        ctx.stroke();
+    }
+    Data.prototype.setConnection = function(connection) {
+
+        if (connection.isEnd)
+            this.reset();
+
+        else {
+
+            this.connection = connection;
+            this.nextConnection = connection.links[connection.links.length * Math.random() | 0];
+
+            this.ox = connection.x; // original coordinates
+            this.oy = connection.y;
+            this.oz = connection.z;
+            this.os = connection.size; // base size
+
+            this.nx = this.nextConnection.x; // new
+            this.ny = this.nextConnection.y;
+            this.nz = this.nextConnection.z;
+            this.ns = this.nextConnection.size;
+
+            this.dx = this.nx - this.ox; // delta
+            this.dy = this.ny - this.oy;
+            this.dz = this.nz - this.oz;
+            this.ds = this.ns - this.os;
+
+            this.proportion = 0;
+        }
+    }
+    Connection.prototype.setScreen = Data.prototype.setScreen = function() {
+
+        var x = this.x,
+            y = this.y,
+            z = this.z;
+
+        var Y = y;
+        y = y * cosX - z * sinX;
+        z = z * cosX + Y * sinX;
+
+        // rot on Y
+        var Z = z;
+        z = z * cosY - x * sinY;
+        x = x * cosY + Z * sinY;
+
+        this.screen.z = z;
+
+        z += opts.depth;
+
+        this.screen.scale = opts.focalLength / z;
+        this.screen.x = opts.vanishPoint.x + x * this.screen.scale;
+        this.screen.y = opts.vanishPoint.y + y * this.screen.scale;
+
+    }
+
+    function squareDist(a, b) {
+
+        var x = b.x - a.x,
+            y = b.y - a.y,
+            z = b.z - a.z;
+
+        return x * x + y * y + z * z;
+    }
+
+    function anim() {
+
+        window.requestAnimationFrame(anim);
+
+        ctx.globalCompositeOperation = 'source-over';
+        ctx.fillStyle = opts.repaintColor;
+        ctx.fillRect(0, 0, w, h);
+
+        ++tick;
+
+        var rotX = tick * opts.rotVelX,
+            rotY = tick * opts.rotVelY;
+
+        cosX = Math.cos(rotX);
+        sinX = Math.sin(rotX);
+        cosY = Math.cos(rotY);
+        sinY = Math.sin(rotY);
+
+        if (data.length < connections.length * opts.dataToConnections) {
+            var datum = new Data(connections[0]);
+            data.push(datum);
+            all.push(datum);
+        }
+
+        ctx.globalCompositeOperation = 'lighter';
+        ctx.beginPath();
+        ctx.lineWidth = opts.wireframeWidth;
+        ctx.strokeStyle = opts.wireframeColor;
+        all.map(function(item) {
+            item.step();
+        });
+        ctx.stroke();
+        ctx.globalCompositeOperation = 'source-over';
+        all.sort(function(a, b) {
+            return b.screen.z - a.screen.z
+        });
+        all.map(function(item) {
+            item.draw();
+        });
+
+
+    }
+
+    window.addEventListener('resize', function() {
+
+        opts.vanishPoint.x = (w = c.width = window.innerWidth) / 2;
+        opts.vanishPoint.y = (h = c.height = window.innerHeight) / 2;
+        ctx.fillRect(0, 0, w, h);
+    });
+    window.addEventListener('click', init);
+</script> -->
+
+
+<script>
+    // // Set the date we're counting down to
+    // var countDownDate = new Date("April 20, 2023 18:00:00").getTime();
+
+    // // Update the count down every 1 second
+    // var x = setInterval(function() {
+
+    //   // Get today's date and time
+    //   var now = new Date().getTime();
+
+    //   // Find the distance between now and the count down date
+    //   var distance = countDownDate - now;
+
+    //   // Time calculations for days, hours, minutes and seconds
+    //   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    //   var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    //   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    //   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    //   // Output the result in an element with id="demo"
+    //   document.getElementById("timer").innerHTML = days + "d " + hours + "h "
+    //   + minutes + "m " + seconds + "s ";
+
+    //     document.getElementById("timer2").innerHTML = days + "d " + hours + "h "
+    //   + minutes + "m " + seconds + "s ";
+
+    //   // If the count down is over, write some text 
+    //   if (distance < 0) {
+    //     clearInterval(x);
+    //     document.getElementById("timer").innerHTML = "EXPIRED";
+    //   }
+    // }, 1000);
+    // 
+</script>
+
+
+</body>
+
+</html>
